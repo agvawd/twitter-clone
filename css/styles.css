@@ -97,7 +97,7 @@ body {
 	}
 		#profile-summary .avatar {
 			position: absolute;
-			top: 0;.twe
+			top: 0;
 			left: 0;
 		}
 		#profile-summary .content {
@@ -131,12 +131,15 @@ body {
 			text-align: right;
 		}
 			#tweet-controls div {
-				display: inline-block;
+				display: none;
 			}
 			#char-count {
 				font-size: 14px;
 				color: #999;
 				text-shadow: 0 1px 1px rgba(255,255,255,.75);
+			}
+			#tweet-submit {
+				display: none;
 			}
 
 /* TWEET */
@@ -168,6 +171,7 @@ body {
 
 	.tweet-actions {
 		text-align: right;
+		display: none;
 	}
 		.tweet-actions ul {
 			list-style-type: none;
@@ -234,6 +238,10 @@ body {
 			border-right: 1px solid #e8e8e8;
 		}
 
+		.retweets {
+			display: none;
+		}
+
 		.users-interact img {
 			margin-top: 6px;
 			margin-left: 5px;
@@ -246,12 +254,14 @@ body {
 			color: #999;
 			border-top: 1px solid #e8e8e8;
 			padding-top: 10px;
+			display: none;
 		}
 
 		.reply {
 			position: relative;
 			clear: both;
 			padding-left: 43px;
+			display: none;
 		}
 			.reply .avatar {
 				position: absolute;
